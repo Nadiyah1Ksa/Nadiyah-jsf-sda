@@ -1,0 +1,21 @@
+package java3;
+
+import java.io.FileWriter;
+
+public class RandW {
+	
+	public static void main(String[] args) {
+		String text ="HELLO EVRYONE, tHIS IS A JAVA ";
+		
+		try {
+			FileWriter writer = new FileWriter("demo.txt");
+			
+		  writer.write(text);
+		  writer.flush();
+		  writer.close();
+			}
+      catch (Exception e) {
+    	  e.printStackTrace();
+      }
+}
+} 
